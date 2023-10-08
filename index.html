@@ -1,0 +1,55 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/app.js" defer></script>
+    <title>F1 Racer Project</title>
+    </head>
+    <body>
+        <h1>Week 7 F1 RACER HW</h1>
+
+
+
+<div>
+
+<form id="search-form" class="col-12">
+        <div class="input-group col-4 mb-3">
+            <input type="number" id="season" class="form-control" placeholder="Season:" required>
+            <input type="number" id="round" class="form-control" placeholder="Round:" required>
+            <button class="btn bg-dark text-light" type="submit" id="button-addon2" onclick="loadData(document.querySelector('#season').value, document.querySelector('#round').value)">Search</button>
+          </div>
+   
+
+          <table id="set-up" class="table bg-dark text-center text-light">
+            <thead>
+                <tr>
+                    <th>Position  ⬇️ </th>
+                    <th>Name  ⬇️ </th>
+                    <th>Nationality  ⬇️ </th>
+                    <th>Sponsor  ⬇️ </th>
+                    <th>Points  ⬇️ </th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+
+</div>
+            <br>
+  
+
+    
+
+
+ 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+    </body>
+    </html>
+</body>
+</html>
