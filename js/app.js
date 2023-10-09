@@ -24,15 +24,14 @@ const createList = (position,name,nationality,sponsor,points) => {
 return document.querySelector(racerList).insertAdjacentHTML('beforeend', html)
 }
 
-
-
-
-
-
 const loadData = async () => {
-    const racers = getData() //await getData()
-
-    racers.forEach(element => createList(element.position,element.name,element.nationality,element.sponsor,element.points))
+    const racers = getData() await getData()
+    let queryFirst = document.querySelector("#season").value
+    let queryLast = document.querySelector('#round').value
+    console.log(queryFirst, queryLast)
+    const f1Racer = await getData(queryFirst, queryLast)
+    console.log(f1Racer)
+    f1Racer.forEach(element => createList(element.Driver.givenName, element.Driver.familyName, element.Driver.nationality, element.Driver.permanentNumber, element.points, element.positionText, element.wins))
 }
 const clearData = () => {
     document.querySelector(racerList).innerHTML = '';
